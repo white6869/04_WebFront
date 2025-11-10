@@ -96,13 +96,47 @@
 
       <!-- 아이디/비밀번호 로그인 영역 -->
       <section class="content-2">
+        <form action="#" method="post" name="login-form">
+          <fieldset id="id-pw-area">
+            <section>
+              <input  type="text" name="inputId" placeholder="아이디">
+              <input name="inputPw" placeholder="비밀번호" type="password">
+            </section>
+            <section>
+              <button type="submit" class="login">로그인</button>
+            </section>
+          </fieldset> 
+          <label>
+            <input type="checkbox">아이디 저장
+          </label>
+
+          <!-- 회원가입 / ID /PW 찾기 영역 -->
+          <section id="signup-find-area">
+            <a href="#"> 회원 가입</a>
+            <span>|</span>
+            <a href="#"> 아이디 비밀번호 찾기</a>
+          </section>
+        </form>
       </section>
     </section>
 
 
   </main>
 
-  <footer></footer>
+  <footer>
+    <p>Copyright &copy; KH Information Educational Institute E-Class</p>
+
+    <section>
+      <a href="#">프로젝트 소개</a>
+      <span>|</span>
+      <a href="#">이용약관</a>
+      <span>|</span>
+      <a href="#">개인정보처리방침</a>
+      <span>|</span>
+      <a href="#">고객센터</a>
+    </section>
+
+  </footer>
 
 </body>
 </html>
