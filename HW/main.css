@@ -1,0 +1,524 @@
+* {
+  box-sizing: border-box;
+}
+header{
+  position: sticky;
+  top: 0;
+  height: 40px;
+  background-color: white;
+}
+main {
+  width: 1430px;
+  margin: auto;
+  display: flex;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  
+}
+
+.search-1, .search-2 {
+  flex-basis: 15%;
+}
+
+.search-2 {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.search-area {
+  flex-basis: 70%;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+
+.search-1 > a:last-child > i {
+  color: red;
+}
+
+.search-1 > a:first-child:hover {
+  background-color: lightgray;
+}
+
+.search-area {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.search-area-form {
+  flex-basis: 45%;
+}
+#search-microphone {
+  flex-direction: 30%;
+}
+
+#search-microphone:hover {
+  border-radius: 50%;
+  border-color: #ddd;
+}
+
+.search-area-form fieldset {
+  border: 1px solid #ddd;
+  border-radius:30px;
+  padding: 2px;
+
+  display: flex;
+}
+
+#query {
+  padding: 10px;
+  font-size: 15px;
+  flex-basis: 80%;
+  border: 0; 
+  outline: none;
+  background-color: transparent;
+}
+
+#search-keyboard {
+  flex-basis: 10%;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+#search-btn {
+  flex-basis: 10%;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-left: 1px solid #ddd;
+  background-color: transparent;
+}
+
+#setting{
+  padding-right: 20px;
+}
+
+#login {
+  width: 92px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  color:  rgb(0, 132, 255);
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#login:hover {
+  background-color: rgb(197, 237, 255);
+}
+
+#main-area {
+  margin-top: 10px;
+  height: auto;
+  flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-side-video {
+  margin-top: 10px;
+  flex-basis: 20%;
+  background-color: aqua;
+}
+
+#main-video {
+  margin-top: 30px;
+  height: 820px;
+}
+
+#main-video > iframe {
+  position: absolute;
+  width: 99%;  
+  height: 100%;
+  border-radius: 8px;
+  position: static;
+}
+
+#main-video-area {
+  flex-basis: 40%;
+}
+
+#main-script{
+  display: flex;
+}
+
+#main-script section img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+#main-script section {
+  display: flex;
+  align-items: center;
+}
+
+#main-script section span:first-child {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#sub {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 15px;
+  width: 57px;
+  height: 36px;
+  cursor: pointer;
+}
+
+
+
+#main-script > section:first-child {
+  flex-basis: 40%;
+}
+
+#main-script > section:last-child {
+  flex-basis: 50%;
+  
+  justify-content: right;
+}
+
+#gb-btn {
+  border-radius: 15px;
+  height: 36px;
+  display: flex;
+  background-color: #f0f0f0;
+  width: 155px;
+  border: none;
+}
+
+#gb-btn > button {
+  flex-basis: 50%;
+  border: none;
+  background-color:#f0f0f0;
+  text-align: center;
+  cursor: pointer;
+}
+
+#gb-btn >button:first-of-type {
+  border-right: 1px solid #ddd;
+}
+
+#btn1 {
+   background-color: #f0f0f0;
+   border-radius: 15px;
+   border: none;
+   height: 36px;
+   font-weight: bold;
+   color: black;
+   width: 81px;
+   cursor: pointer;
+   margin-left: 10px;
+
+}
+#btn2 {
+   background-color:  #f0f0f0;
+   border-radius: 15px;
+   border: none;
+   height: 36px;
+   font-weight: bold;
+   color: black;
+   width: 111px;
+   cursor: pointer;
+   margin-left: 10px;
+}
+#btn3{
+   background-color:  #f0f0f0;
+   border: none;
+   border-radius: 15px;
+   height: 36px;
+   font-weight: bold;
+   color: black;
+   width: 81px;
+   cursor: pointer;
+   margin-left: 10px;
+}
+#btn4 {
+   background-color: #f0f0f0;
+   border: none;
+   border-radius: 15px;
+   height: 36px;
+   font-weight: bold;
+   color: black;
+   width: 36px;
+   cursor: pointer;
+   margin-left: 10px;
+}
+
+#main-text{
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  width: 99%;
+}
+#eis {
+  margin-top: 20px;
+}
+
+#eis > img{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+#eis > input {
+  border: none;
+  border-bottom: 1px solid #c9c9c9;
+  width: 96%;
+}
+
+#div1 {
+  margin-top: 30px;
+  display: flex;
+}
+#div1 > img {
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#div1 > div {
+  padding-left: 10px;
+  flex-basis: 80%;
+}
+
+#div1 div >span:nth-of-type(2) {
+  font-size: 12px;
+}
+
+#div1 div > button:nth-of-type(1), #div1 div > button:nth-of-type(2)  {
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  border-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#div1 div > button:nth-of-type(3) {
+  background-color: transparent;
+  width: 50px;
+  height: 32px;
+  border-color: transparent;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#div1 div > button:nth-of-type(1):hover , #div1 div > button:nth-of-type(2):hover {
+  background-color: #ddd;
+}
+
+#div1 div > button:nth-of-type(3):hover {
+  background-color: #ddd;
+}
+
+#div2 {
+  margin-top: 30px;
+  display: flex;
+}
+#div2 > img {
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#div2 > div {
+  padding-left: 10px;
+  flex-basis: 80%;
+}
+
+#div2 div >span:nth-of-type(2) {
+  font-size: 12px;
+}
+
+#div2 div > button:nth-of-type(1), #div2 div > button:nth-of-type(2)  {
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  border-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#div2 div > button:nth-of-type(3) {
+  background-color: transparent;
+  width: 50px;
+  height: 32px;
+  border-color: transparent;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#div2 div > button:nth-of-type(1):hover , #div2 div > button:nth-of-type(2):hover {
+  background-color: #ddd;
+}
+
+#div2 div > button:nth-of-type(3):hover {
+  background-color: #ddd;
+}
+
+#div3 {
+  margin-top: 30px;
+  display: flex;
+}
+#div3 > img {
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#div3 > div {
+  padding-left: 10px;
+  flex-basis: 80%;
+}
+
+#div3 div >span:nth-of-type(2) {
+  font-size: 12px;
+}
+
+#div3 div > button:nth-of-type(1), #div3 div > button:nth-of-type(2)  {
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  border-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#div3 div > button:nth-of-type(3) {
+  background-color: transparent;
+  width: 50px;
+  height: 32px;
+  border-color: transparent;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#div3 div > button:nth-of-type(1):hover , #div3 div > button:nth-of-type(2):hover {
+  background-color: #ddd;
+}
+
+#div3 div > button:nth-of-type(3):hover {
+  background-color: #ddd;
+}
+
+
+#div4 {
+  margin-top: 30px;
+  display: flex;
+}
+#div4 > img {
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#div4 > div {
+  padding-left: 10px;
+  flex-basis: 80%;
+}
+
+#div4 div >span:nth-of-type(2) {
+  font-size: 12px;
+}
+
+#div4 div > button:nth-of-type(1), #div4 div > button:nth-of-type(2)  {
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  border-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#div4 div > button:nth-of-type(3) {
+  background-color: transparent;
+  width: 50px;
+  height: 32px;
+  border-color: transparent;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#div4 div > button:nth-of-type(1):hover , #div4 div > button:nth-of-type(2):hover {
+  background-color: #ddd;
+}
+
+#div4 div > button:nth-of-type(3):hover {
+  background-color: #ddd;
+}
+
+#div5 {
+  margin-top: 30px;
+  display: flex;
+}
+#div5 > img {
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#div5 > div {
+  padding-left: 10px;
+  flex-basis: 80%;
+}
+
+#div5 div >span:nth-of-type(2) {
+  font-size: 12px;
+}
+
+#div5 div > button:nth-of-type(1), #div5 div > button:nth-of-type(2)  {
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  border-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#div5 div > button:nth-of-type(3) {
+  background-color: transparent;
+  width: 50px;
+  height: 32px;
+  border-color: transparent;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#div5 div > button:nth-of-type(1):hover , #div5 div > button:nth-of-type(2):hover {
+  background-color: #ddd;
+}
+
+#div5 div > button:nth-of-type(3):hover {
+  background-color: #ddd;
+}
+
