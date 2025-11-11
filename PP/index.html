@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JinHeyounBaek.com</title>
+  <link href="./style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/49a69268c3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav id="header-menu">
+      <ul>
+        <li> <a href="#">Home</a></li>
+        <li> <a href="#">About Me</a></li>
+        <li> <a href="#">Education/Skills</a></li>
+        <li> <a href="#">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    
+    <img src="/images/bomb.png">
+    <section id="aboutme">
+      <h1>About Me</h1>
+    </section>
+    <img src="/images/bomb.png">
+    <img src="/images/bomb.png">
+    
+    <section id="educationSkills">
+      <h1>Education/Skills</h1>
+       <div class="wrap">
+        <div class="prev"><i class="fa-solid fa-chevron-left"></i> </div>
+        <div class="box">
+          <div class="slide_box">
+            <div class="slide_item">
+              <a href=""><img src="/HW/이미지/댓글1.jpg" alt="1"></a>
+            </div>
+            <div class="slide_item">
+              <a href=""><img src="/HW/이미지/댓글2.jpg" alt="2"></a>
+            </div>
+            <div class="slide_item">
+              <a href=""><img src="/HW/이미지/댓글3.jpg" alt="3"></a>
+            </div>
+            <div class="slide_item">
+              <a href=""><img src="/HW/이미지/댓글4.jpg" alt="4"></a>
+            </div>
+          </div>
+        </div>
+        <div class="next"><i class="fa-solid fa-chevron-right"></i></div>
+       </div>
+    <script>
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+        const slideBox = document.querySelector('.slide_box')
+        const slide = document.querySelectorAll('.slide_item img')
+        const slideLangth = slide.length
+        let currentIndex = 0;
+
+        const moveSlide = function(num){
+            slideBox.style.transform = `translateX(${-num * 400}px)`;
+            currentIndex = num;
+        }
+
+        prev.addEventListener('click', ()=>{
+            if(currentIndex !== 0){
+                moveSlide(currentIndex -1)
+            }
+        })
+
+        next.addEventListener('click', ()=>{
+            if(currentIndex !== slideLangth -1){
+                moveSlide(currentIndex +1)
+            }
+        })
+    </script>
+  
+    </section>
+    <img src="/images/bomb.png">
+    <form  id="contact-area" contact-form" method="post" action="#" >
+      <fieldset>
+        <legend>Contact Me</legend>
+        <input placeholder="성함" >
+        <input placeholder="이메일">
+        <input placeholder="연락처">
+        <button type="submit"> 연락남기기</button>
+      </fieldset>
+    </form>
+  </main>
+  <footer></footer>
+  
+  
+</body>
+</html>
