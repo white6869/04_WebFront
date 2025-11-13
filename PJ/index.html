@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JinHeyounBaek.com</title>
+  <link href="./style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/49a69268c3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header>
+    <nav id="header-menu">
+      <ul>
+        <li> <a href="./index.html">Home</a></li>
+        <li> <a href="#about">About Me</a></li>
+        <li> <a href="#educationSkills">Education/Skills</a></li>
+        <li> <a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="bg">
+      <h1>Developer</h1>
+      <h4>효율적인 코드 작성!</h4>
+      <img class="bg-img" src="./이미지/프로필.jpg">
+    </div>
+    <hr>
+    <section id="about">
+      <h2>About Me</h2>
+      <div>
+        <span>
+          <br>
+          <strong>소개말</strong><br>
+          저는 개발은 단순한 작업이 아니라, 효율적인
+          코드 작성을 통해 실질적인 문제를 해결하는 
+          과정이라고 생각합니다.<br> 제 프로그래밍 
+          언어와 알고리즘 설계 스킬로 최선을 다하겠습니다.
+        </span>
+        <div class="about-grade1">
+          <table class="about-table-grade">
+            <tr>
+              <th colspan="2">학력</th> 
+            </tr> 
+            <tr> 
+              <td>2015~2018</td>
+              <td>고등학교 졸업</td>
+            </tr>
+            <tr> 
+              <td>2018~2024</td>
+              <td>대학교 졸업</td>
+            </tr>
+          </table>
+          <table class="about-table-grade">
+            <tr>
+              <th colspan="2">자격증</th> 
+            </tr>
+            <tr> 
+              <td>2024.06</td>
+              <td>정보처리기사</td>
+            </tr>
+            <tr> 
+              <td>2025.09</td>
+              <td>KH 컴퓨팅 자격증</td>
+            </tr>
+          </table>
+        </div>
+        <div class="about-grade2">
+          <table class="about-table-grade">
+            <tr>
+              <th>취미</th>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-gamepad"></i>게임</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-music"></i>음악 감상</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-book"></i>독서</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-table-tennis-paddle-ball"></i>탁구</td>
+            </tr>
+          </table>
+        </div>
+        
+        
+      </div>
+     
+    </section>
+    <hr>
+    
+    <section id="educationSkills">
+      <h2>Education/Skills</h2>
+      <fieldset>
+        <ul>
+          <li><i class="fa-brands fa-java"></i>Java</li>
+          <progress class="es-progress" value="95" max="100"></progress>
+          <li><i class="fa-solid fa-database"></i>DB</li>
+          <progress class="es-progress" value="88" max="100"></progress>
+          <li><i class="fa-brands fa-html5"></i>HTML5</li>
+          <progress class="es-progress" value="90" max="100"></progress>
+          <li><i class="fa-brands fa-python"></i>Python</li>
+          <progress class="es-progress" value="80" max="100"></progress>
+        </ul>
+      </fieldset>
+       
+  
+    </section>
+    <hr>
+    <section id="contact">
+      <img src="./이미지/contactme.jpg">
+      <form  id="contact-area" contact-form" method="post" action="#" >
+        <fieldset>
+          <legend>Contact Me</legend>
+          <span>성함</span>
+          <input placeholder="성함" ><br>
+          <span>이메일</span>
+          <input type="email" placeholder="이메일"><br>
+          <span>연락처</span>
+          <input type="tel" placeholder="연락처"><br>
+          <button type="button" onclick="alert('연락남겨주셔서 감사합니다. 곧 연락드리겠습니다!!')"> 연락남기기</button>
+        </fieldset>
+      </form>
+    </section>
+   
+  </main>
+  <footer>
+    <h6>copyright &copy; BJH &nbsp; 20251112</h6>
+  </footer>
+  
+  
+</body>
+</html>
